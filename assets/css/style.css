@@ -151,13 +151,21 @@ body{
 @media only screen and (max-width: 375px){
 
     .card{
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         background: linear-gradient(135deg, #ff83cd, #8bbae9);
         color: #fff;
-        margin: 30px auto;
-        border-radius: 40px;
-        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        max-width: 80rem;
+        border-radius: 20px;
+        padding: 2rem;
         text-align: center;
+    }
+
+    .card > *{
+        width: 100%;
     }
 
     .search{
